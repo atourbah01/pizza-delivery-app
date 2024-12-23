@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/abt_us"
+        android:id="@+id/abtus"/>
+
+    <ImageView
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abtus"
+        android:paddingBottom="@dimen/margin5"
+        android:src="@drawable/location"
+        android:id="@+id/locationIcon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin30"
+        android:text="@string/address"
+        android:layout_below="@+id/abtus"
+        android:id="@+id/locationText"/>
+
+    <ImageView
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:src="@drawable/mail"
+        android:layout_below="@id/locationIcon"
+        android:id="@+id/emailIcon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:layout_below="@id/locationText"
+        android:layout_toRightOf="@id/emailIcon"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin20"
+        android:id="@+id/emailText"
+        android:clickable="true"
+        android:onClick="sendEmail"/>
+
+    <ImageView
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:src="@drawable/phone"
+        android:layout_below="@id/emailIcon"
+        android:id="@+id/mobileIcon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:layout_below="@id/emailText"
+        android:layout_toRightOf="@id/mobileIcon"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin14"
+        android:id="@+id/mobileText"
+        android:clickable="true"
+        android:onClick="sendEmail"/>
+
+</RelativeLayout>

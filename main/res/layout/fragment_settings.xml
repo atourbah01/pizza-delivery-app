@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/text_margin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/set"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textSize="@dimen/margin20" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setty"
+            android:src="@drawable/settings"
+            android:layout_marginStart="@dimen/margin130"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxPizzaDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deliv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size" />
+
+        <Spinner
+            android:id="@+id/spinnerPizzaSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pizza_sizes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+        <Spinner
+            android:id="@+id/spinnerQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/quantities" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toppings" />
+
+        <Switch
+            android:id="@+id/switchTopping1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bbq" />
+
+        <Switch
+            android:id="@+id/switchTopping2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/butter" />
+
+        <RadioButton
+            android:id="@+id/radioButtonchicago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chicago" />
+        <RadioButton
+            android:id="@+id/radioButtonoven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brick" />
+
+        <RadioButton
+            android:id="@+id/radioButtonitalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/italian" />
+        <RadioButton
+            android:id="@+id/radioButtoneapolitan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/neapolitan" />
+        <RadioButton
+            android:id="@+id/radioButtoncalifornia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/california" />
+        <RadioButton
+            android:id="@+id/radioButtonyork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/york" />
+        <RadioButton
+            android:id="@+id/radioButtonsicilian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sicilian" />
+        <RadioButton
+            android:id="@+id/radioButtongreek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greek"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setbtn"
+            android:text="@string/ok"/>
+
+    </LinearLayout>
+</ScrollView>

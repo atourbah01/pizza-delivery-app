@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/text_margin"
+    tools:context=".ThirdActivity"
+    android:background="@color/teal_200">
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fullname"/>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullname"
+        android:hint="@string/txtfullname"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFullName"
+        android:text="@string/username"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFullName"
+        android:layout_marginTop="@dimen/margin8"
+        android:hint="@string/txtuser"/>
+
+    <TextView
+        android:id="@+id/passowrd"
+        android:layout_below="@id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passowrd"
+        android:layout_marginTop="@dimen/margin8"
+        android:inputType="textPassword"
+        android:hint="@string/txtpass"/>
+
+    <TextView
+        android:id="@+id/mobilephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:text="@string/number"/>
+
+
+    <EditText
+        android:id="@+id/editTextMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobilephone"
+        android:layout_marginTop="@dimen/margin8"
+        android:inputType="phone"
+        android:hint="@string/txtphone"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMobileNumber"
+        android:layout_marginTop="@dimen/text_margin"
+        android:text="@string/signupbtn"
+        android:onClick="OnSignupClick"/>
+</RelativeLayout>
